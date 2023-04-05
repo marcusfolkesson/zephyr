@@ -118,6 +118,18 @@
 				channel6-gain = <0>;
 				channel7-gain = <0>;
 			};
+
+			test_spi_ltc1660: ltc1660@3 {
+				compatible = "lltc,ltc1660";
+				reg = <0x3>;
+				spi-max-frequency = <0>;
+			};
+
+			test_spi_ltc1665: ltc1665@4 {
+				compatible = "lltc,ltc1665";
+				reg = <0x4>;
+				spi-max-frequency = <0>;
+			};
 		};
 	};
 };
